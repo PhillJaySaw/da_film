@@ -173,7 +173,7 @@ main h1 {
 .oferta-box {
    background: #EEE;
    width: 250px;
-   height: 300px;
+   height: 290px;
    margin: 0 auto;
    padding-left: 15px;
    padding-right: 15px;
@@ -224,7 +224,7 @@ section#o-nas {
    width: 500px;
    position: absolute;
    top: 25%;
-   left: 7%;
+   left: 10%;
 }
 
 #o-nas button {
