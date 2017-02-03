@@ -32,6 +32,11 @@ h2 {
    font-size: 200%;
 }
 
+section {
+   padding-top: 4em;
+   padding-bottom: 8.5em;
+}
+
 button {
    background: #778DA9;
    border: none;
@@ -108,7 +113,7 @@ li a {
    height: auto;
 }
 
-#videoMessage .text-box {
+.text-box {
    width: auto;
    color: #E0E1DD;
    font-size: 150%;
@@ -151,7 +156,7 @@ video#bgvid {
 
 main h1 {
    text-align: center;
-   margin-top: 1.5em;
+   /*margin-top: 1.5em;*/
    color: #0D1B2A;
 }
 
@@ -161,7 +166,7 @@ main h1 {
    margin-right: .3em;
 }
 
-#oferty {
+#oferty .row {
    margin-top: 12em;
 }
 
@@ -203,9 +208,46 @@ main h1 {
    text-align: left;
 }
 
+section#o-nas {
+   background: url('../media/onas_bg.png') no-repeat;
+   background-size: cover;
+   height: 550px;
+   position: relative;
+}
+
+#o-nas h1 {
+   color: #E0E1DD;
+
+}
+
+#o-nas .text-box {
+   width: 500px;
+   position: absolute;
+   top: 25%;
+   left: 7%;
+}
+
+#o-nas button {
+   font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+   height: 50px;
+   background: #415A77;
+   width: 100%;
+}
 
 /* ========== MEDIA QUERIES ========= */
 
 #temp {
-   height: 1000px;
+   height: 300px;
 }
