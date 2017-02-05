@@ -14,6 +14,8 @@ font-family: 'Quattrocento Sans', sans-serif;
 */
 
 
+/* ========== General styles  ========= */
+
 body {
    font-family: 'Quattrocento Sans', sans-serif;
    overflow-x: hidden;
@@ -28,8 +30,13 @@ h1, h2, h3 {
    font-family: 'Oswald', sans-serif;
 }
 
+header h1 {
+   color: #EEE;
+}
+
 h2 {
    font-size: 200%;
+   color: #1B263B;
 }
 
 section {
@@ -56,14 +63,56 @@ button:hover {
   clear: both;
 }
 
-header.top {
+.text-box {
+   width: 500px;
+   color: #E0E1DD;
+   font-size: 150%;
+   margin-top: 2em;
+   padding: 1em;
+   padding-bottom: 0.1em;
+   background: rgba(0, 0, 0, 0.5);
+   box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+main h1 {
+   text-align: center;
+   /*margin-top: 1.5em;*/
+   color: #0D1B2A;
+}
+
+.header-decoration-sqaure {
+   width: 10px;
+   height: 45px;
+   margin-right: .3em;
+}
+
+.header-box {
+   position: absolute;
+   top: 20%;
+   left: 10%;
+}
+
+.header-box h1 {
+   font-size: 450%;
+   color:
+}
+
+/* ========== Page Header + nav  ========== */
+
+header {
+   position: relative;
+   width: 100%;
+   height: 500px;
+}
+
+html#home header {
    position: relative;
    height:100vh;
    width: 100%;
    overflow: hidden;
 }
 
-nav {
+nav.main-nav {
    background: #415A77;
    position: fixed;
    width: 100%;
@@ -74,7 +123,7 @@ nav {
    font-size: 110%;
 }
 
-nav ul {
+nav.main-nav ul {
    float: right;
    margin: 0;
    padding: 0;
@@ -82,7 +131,7 @@ nav ul {
    overflow: hidden;
 }
 
-nav ul li {
+nav.main-nav ul li {
    display: inline-block;
    padding: 14px 16px;
    margin: 0;
@@ -111,17 +160,6 @@ li a {
 #main-logo {
    width: 750px;
    height: auto;
-}
-
-.text-box {
-   width: auto;
-   color: #E0E1DD;
-   font-size: 150%;
-   margin-top: 2em;
-   padding: 1em;
-   padding-bottom: 0.1em;
-   background: rgba(0, 0, 0, 0.5);
-   box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
 }
 
 #videoMessage .text-box ul {
@@ -166,6 +204,8 @@ main h1 {
    margin-right: .3em;
 }
 
+/* ======== nasz a oferta ========= */
+
 #oferty .row {
    margin-top: 12em;
 }
@@ -208,6 +248,8 @@ main h1 {
    text-align: left;
 }
 
+/* ========= O nas ========= */
+
 section#o-nas {
    background: url('../media/onas_bg.png') no-repeat;
    background-size: cover;
@@ -231,19 +273,80 @@ section#o-nas {
    font-size: 18px;
 }
 
+/* ========= Footer ========= */
 
-
-
-
-
-
-
-
-
-footer{
+footer {
    height: 50px;
    background: #415A77;
    width: 100%;
+   color: #E0E1DD;
+   position: relative;
+}
+
+span.copy {
+   position: absolute;
+   left: 7%;
+   top: 50%;
+   transform: translate(0%, -50%);
+}
+
+nav.footer-nav {
+   position: absolute;
+   right: 7%;
+   top: 50%;
+   transform: translate(0%, -50%);
+}
+
+footer a {
+   text-decoration: none;
+   color: #E0E1DD;
+   padding: 0 1em;
+   border-left: 1px solid #E0E1DD;
+}
+
+/* ========== PODSTRONA OFERTA ========= */
+
+html#oferta header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+}
+
+section#category-selector {
+   margin-top: 4em;
+   margin-bottom: 4em;
+}
+
+section#category-selector .category {text-align: center;}
+
+section#category-selector .category img {
+   border-radius: 999px;
+   width: 210px;
+   height: auto;
+   box-shadow: 0px 10px 10px -5px rgba(0,0,0,.4);
+   transition: all ease-in-out 200ms;
+   cursor: pointer;
+}
+
+section#category-selector .category img:hover {
+   box-shadow: 0px 30px 20px -20px rgba(0,0,0,.2);
+   transform: translate(0px, -10px) scale(1.1)
+}
+
+html#oferta .row{
+   margin-bottom: 3em;
+}
+
+section#category-selector h2 {
+   font-size: 220%;
+   margin-top: .5em;
+   background: #eee;
+   border-radius: 10px;
+   padding-top: .2em;
+   padding-bottom: .2em;
+}
+
+html#oferta main {
+   padding: 5em 0;
 }
 
 /* ========== MEDIA QUERIES ========= */
