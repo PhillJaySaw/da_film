@@ -139,6 +139,14 @@ nav.main-nav ul li {
    padding: .5em 3em .5em 0;
 }
 
+nav img {
+   position: absolute;
+   left: 1%;
+   top: 10%;
+   height: 32px;
+   width: auto;
+}
+
 li a {
    text-decoration: none;
    color: #E0E1DD;
