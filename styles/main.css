@@ -401,6 +401,40 @@ div.product-text p {
 div.product-text button {
    float: right;
 }
+
+/* ========== KONTAKT ========= */
+
+#kontakt header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+}
+
+#kontakt section {
+   padding-top: 2em;
+   padding-bottom: 2em;
+}
+
+#kontakt .kontakt {
+   text-align: center;
+   font-size: 150%;
+}
+
+section.map {
+   padding-top: 0;
+}
+
+#kontakt img.icon {
+   margin-right: 1em;
+}
+
+.kontakt-info {
+   margin-top: 2em;
+}
+
+.map {
+   margin-bottom: 2em; 2
+}
+
 /* ========== MEDIA QUERIES ========= */
 
 #temp {
