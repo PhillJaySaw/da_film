@@ -402,6 +402,28 @@ div.product-text button {
    float: right;
 }
 
+
+/* ========== O NAS ========= */
+
+#onas header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+}
+
+#onas section {
+   padding: 2em 2em;
+}
+
+#onas h1 {
+   text-align: left;
+}
+
+#onas section p {
+   margin-top: 2em;
+   font-size: 110%;
+}
+
+
 /* ========== KONTAKT ========= */
 
 #kontakt header {
