@@ -98,6 +98,13 @@ main h1 {
    color:
 }
 
+#big-bg-baner {
+   background: url('../media/onas_bg720.png') no-repeat;
+   background-size: cover;
+   height: 550px;
+   position: relative;
+}
+
 /* ========== Page Header + nav  ========== */
 
 header {
@@ -423,6 +430,21 @@ div.product-text button {
    font-size: 110%;
 }
 
+#onas .wiecej h1 {
+   text-align: center;
+   color: #E0E1DD;
+   font-size: 400%;
+}
+
+#onas .wiecej {
+   padding-top: 4em;
+   padding-bottom: 8.5em;
+   height: 400px;
+}
+
+#ona .wiecej .columns {
+   text-align: center;
+}
 
 /* ========== KONTAKT ========= */
 
