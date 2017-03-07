@@ -21,6 +21,11 @@ body {
    overflow-x: hidden;
 }
 
+p {
+   font-family: 'Helvetica', sans-serif;
+   font-weight: 300;
+}
+
 h1 {
    font-weight: 700;
    letter-spacing: 2px;
@@ -120,6 +125,15 @@ html#home header {
    overflow: hidden;
 }
 
+#welcome-blurp {
+   color: #E0E1DD;
+   font-size: 200%;
+   letter-spacing: 0.2em;
+   margin-top: 1.2em;
+   padding-left: 1em;
+   text-transform: uppercase;
+}
+
 nav.main-nav {
    background: #415A77;
    position: fixed;
@@ -170,11 +184,12 @@ li a {
 #videoMessage {
    position: absolute;
    left: 10%;
-   top: 15%;
+   top: 50%;
+   transform: translate(0,-50%);
 }
 
 #main-logo {
-   width: 750px;
+   width: 850px;
    height: auto;
 }
 
@@ -229,7 +244,7 @@ main h1 {
 .oferta-box {
    background: #EEE;
    width: 250px;
-   height: 290px;
+   height: 340px;
    margin: 0 auto;
    padding-left: 15px;
    padding-right: 15px;
@@ -258,10 +273,18 @@ main h1 {
 
 .oferta-box button {
    margin: 0 auto;
+   position: absolute;
+   top: 84%;
+   left: 50%;
+   transform: translate(-50%, 0);
 }
 
 .oferta-box p {
    text-align: left;
+}
+
+.oferta-box ul {
+   list-style: none;
 }
 
 /* ========= O nas ========= */
@@ -283,6 +306,8 @@ section#o-nas {
    position: absolute;
    top: 25%;
    left: 10%;
+   padding: 1.5em;
+   letter-spacing: .08em;
 }
 
 #o-nas button {
@@ -415,7 +440,7 @@ div.product-text button {
 #onas header {
    background: url("../media/folia.png") no-repeat;
    background-size: cover;
-   height: 300px;
+   height: 200px;
 }
 
 #onas section {
@@ -426,6 +451,14 @@ div.product-text button {
    text-align: left;
 }
 
+.site-title {
+   position: absolute;
+   left: 50%;
+   top: 45%;
+   transform: translate(-50%,0);
+   font-size: 400%;
+}
+
 #onas section p {
    margin-top: 2em;
    font-size: 110%;
@@ -433,7 +466,7 @@ div.product-text button {
 
 #onas .wiecej h1 {
    text-align: center;
-   color: #E0E1DD;
+   color: #EEE;
    font-size: 400%;
 }
 
