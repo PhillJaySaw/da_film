@@ -415,6 +415,7 @@ div.product-text button {
 #onas header {
    background: url("../media/folia.png") no-repeat;
    background-size: cover;
+   height: 300px;
 }
 
 #onas section {
@@ -438,12 +439,20 @@ div.product-text button {
 
 #onas .wiecej {
    padding-top: 4em;
-   padding-bottom: 8.5em;
-   height: 400px;
+   padding-bottom: 4em;
+   height: auto;
 }
 
-#ona .wiecej .columns {
+.onas-last {
    text-align: center;
+}
+
+.onas-last button {
+   height: 50px;
+   width: 230px;
+   border-radius: 40px;
+   margin: 3em 0;
+   font-size: 120%;
 }
 
 /* ========== KONTAKT ========= */
