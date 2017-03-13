@@ -26,6 +26,10 @@ p {
    font-weight: 300;
 }
 
+a:hover {
+
+}
+
 h1 {
    font-weight: 700;
    letter-spacing: 2px;
@@ -378,9 +382,11 @@ footer a {
 
 /* ========== PODSTRONA OFERTA ========= */
 
+
 html#oferta header {
    background: url("../media/folia.png") no-repeat;
    background-size: cover;
+   height: 500px;
 }
 
 section#category-selector {
@@ -431,6 +437,20 @@ html#oferta main {
 
 /* ========== PODSTRONA PRODUKTOW ========= */
 
+html#prod header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+   height: 300px;
+}
+
+html#prod main {
+   padding: 5em 0;
+}
+
+html#prod .row{
+   margin-bottom: 3em;
+}
+
 div.product-box {
    background: #eee;
    border-radius: 10px;
@@ -469,6 +489,23 @@ div.product-box button {
    clear: both;
    margin-right: 3em;
    margin-bottom: 1em;
+}
+
+.more-info {
+   clear: both;
+   margin-bottom: 2em;
+}
+
+.more-info table {
+   margin: 0 auto;
+   margin-bottom: 5em;
+   font-family: 'Helvetica', sans-serif;
+   width: 85%;
+}
+
+.more-info caption {
+   font-size: 150%;
+   border-bottom: 1px solid black;
 }
 
 
