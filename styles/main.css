@@ -49,6 +49,11 @@ h2 {
    color: #1B263B;
 }
 
+h3 {
+   font-size: 140%;
+   font-weight: 400;
+}
+
 section {
    padding-top: 4em;
    padding-bottom: 8.5em;
@@ -593,6 +598,18 @@ section.map {
 
 .map {
    margin-bottom: 2em; 2
+}
+
+/* ========== WARUNKI SPRZEDAŻY ========= */
+
+html#warunki header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+   height: 500px;
+}
+
+.warunki-sprzedazy h2, .warunki-sprzedazy h3 {
+   text-align: center;
 }
 
 /* ========== MEDIA QUERIES ========= */
