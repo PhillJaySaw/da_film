@@ -119,6 +119,7 @@ main h1 {
    position: relative;
 }
 
+
 /* ========== Page Header + nav  ========== */
 
 header {
@@ -275,7 +276,7 @@ main h1 {
    transform: translate(-50%, 0);
 }
 
-/* ======== nasz a oferta ========= */
+/* ======== nasza oferta ========= */
 
 #oferty .row {
    margin-top: 12em;
@@ -332,7 +333,6 @@ main h1 {
 section#o-nas {
    background: url('../media/onas_bg720.png') no-repeat;
    background-size: cover;
-   height: 550px;
    position: relative;
 }
 
@@ -341,18 +341,58 @@ section#o-nas {
 
 }
 
+/*
 #o-nas .text-box {
-   width: 500px;
+   max-width: 37%;
+   min-width: 30%;
    position: absolute;
-   top: 25%;
-   left: 10%;
+   left: 8%;
+   top: 50%;
+   transform: translate(0, -50%);
    padding: 1.5em;
    letter-spacing: .08em;
+   display: inline-block;
+   text-align: left;
+   margin: 0;
 }
+*/
+
+/*
+#o-nas img[src="media/crew.jpg"] {
+   max-width: 37%;
+   height: auto;
+   position: absolute;
+   right: 8%;
+   top: 50%;
+   transform: translate(0, -50%);
+}
+*/
 
 #o-nas button {
    font-size: 18px;
 }
+
+#o-nas .text-box {
+   letter-spacing: .08em;
+   text-align: left;
+   margin: 0;
+   width: 100%;
+   font-size: 130%;
+}
+
+img[src="media/crew.jpg"] {
+   width: 500px;
+   position: absolute;
+   left: 60%;
+   top: 50%;
+   transform: translate(0, -50%);
+}
+
+#o-nas .container {
+   margin-top: 6em;
+   max-width: 1400px;
+}
+
 
 /* ========= Footer ========= */
 
@@ -470,12 +510,21 @@ div.product-img {
    width: 30%;
    height: 210px;
    float: left;
-   background: url("../media/produkt_folia.jpg") no-repeat;
+   background: url("../media/nopic.png") no-repeat;
    background-size: cover;
    background-position: center;
    overflow: hidden;
-   border-right: 3px solid #444;
-   border-bottom: 3px solid #444;
+   /*border-right: 3px solid #444;
+   border-bottom: 3px solid #444;*/
+   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.worsmiec .product-img {
+   background: url("../media/workismiec.png") no-repeat center;
+}
+
+.worspec .product-img {
+   background: url("../media/azbest.png") no-repeat center;
 }
 
 div.product-text {
@@ -566,6 +615,21 @@ div.product-box button {
    margin: 3em 0;
    font-size: 120%;
 }
+
+.kim-jestesmy {
+   margin-top: 5em;
+   margin-bottom: 5em;
+}
+
+.budynek {
+   width: 500px;
+   height: auto;
+   position: absolute;
+   top: 50%;
+   left: 55%;
+   transform: translate(0, -50%);
+}
+
 
 /* ========== KONTAKT ========= */
 

@@ -1,9 +1,8 @@
 $(document).ready(function() {
    $('.more-info').toggle(0);
 
-   console.log('hello');
    $('.more-less-button').on('click', function() {
-      $('.more-info').toggle(400);
+      $(this).prev().toggle(400);
    });
 
    $(function(){

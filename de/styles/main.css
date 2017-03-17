@@ -26,6 +26,10 @@ p {
    font-weight: 300;
 }
 
+a:hover {
+
+}
+
 h1 {
    font-weight: 700;
    letter-spacing: 2px;
@@ -43,6 +47,11 @@ header h1 {
 h2 {
    font-size: 200%;
    color: #1B263B;
+}
+
+h3 {
+   font-size: 140%;
+   font-weight: 400;
 }
 
 section {
@@ -109,6 +118,7 @@ main h1 {
    height: 550px;
    position: relative;
 }
+
 
 /* ========== Page Header + nav  ========== */
 
@@ -266,7 +276,7 @@ main h1 {
    transform: translate(-50%, 0);
 }
 
-/* ======== nasz a oferta ========= */
+/* ======== nasza oferta ========= */
 
 #oferty .row {
    margin-top: 12em;
@@ -323,7 +333,6 @@ main h1 {
 section#o-nas {
    background: url('../media/onas_bg720.png') no-repeat;
    background-size: cover;
-   height: 550px;
    position: relative;
 }
 
@@ -332,18 +341,58 @@ section#o-nas {
 
 }
 
+/*
 #o-nas .text-box {
-   width: 500px;
+   max-width: 37%;
+   min-width: 30%;
    position: absolute;
-   top: 25%;
-   left: 10%;
+   left: 8%;
+   top: 50%;
+   transform: translate(0, -50%);
    padding: 1.5em;
    letter-spacing: .08em;
+   display: inline-block;
+   text-align: left;
+   margin: 0;
 }
+*/
+
+/*
+#o-nas img[src="media/crew.jpg"] {
+   max-width: 37%;
+   height: auto;
+   position: absolute;
+   right: 8%;
+   top: 50%;
+   transform: translate(0, -50%);
+}
+*/
 
 #o-nas button {
    font-size: 18px;
 }
+
+#o-nas .text-box {
+   letter-spacing: .08em;
+   text-align: left;
+   margin: 0;
+   width: 100%;
+   font-size: 130%;
+}
+
+img[src="media/crew.jpg"] {
+   width: 500px;
+   position: absolute;
+   left: 60%;
+   top: 50%;
+   transform: translate(0, -50%);
+}
+
+#o-nas .container {
+   margin-top: 6em;
+   max-width: 1400px;
+}
+
 
 /* ========= Footer ========= */
 
@@ -378,9 +427,11 @@ footer a {
 
 /* ========== PODSTRONA OFERTA ========= */
 
+
 html#oferta header {
    background: url("../media/folia.png") no-repeat;
    background-size: cover;
+   height: 500px;
 }
 
 section#category-selector {
@@ -395,6 +446,7 @@ section#category-selector .category {
    padding-top: 2em;
    padding-bottom: 1em;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+   height: 330px;
 }
 
 section#category-selector .category img {
@@ -431,6 +483,20 @@ html#oferta main {
 
 /* ========== PODSTRONA PRODUKTOW ========= */
 
+html#prod header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+   height: 300px;
+}
+
+html#prod main {
+   padding: 5em 0;
+}
+
+html#prod .row{
+   margin-bottom: 3em;
+}
+
 div.product-box {
    background: #eee;
    border-radius: 10px;
@@ -445,12 +511,21 @@ div.product-img {
    width: 30%;
    height: 210px;
    float: left;
-   background: url("../media/produkt_folia.jpg") no-repeat;
+   background: url("../media/nopic.png") no-repeat;
    background-size: cover;
    background-position: center;
    overflow: hidden;
-   border-right: 3px solid #444;
-   border-bottom: 3px solid #444;
+   /*border-right: 3px solid #444;
+   border-bottom: 3px solid #444;*/
+   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.worsmiec .product-img {
+   background: url("../media/workismiec.png") no-repeat center;
+}
+
+.worspec .product-img {
+   background: url("../media/azbest.png") no-repeat center;
 }
 
 div.product-text {
@@ -469,6 +544,23 @@ div.product-box button {
    clear: both;
    margin-right: 3em;
    margin-bottom: 1em;
+}
+
+.more-info {
+   clear: both;
+   margin-bottom: 2em;
+}
+
+.more-info table {
+   margin: 0 auto;
+   margin-bottom: 5em;
+   font-family: 'Helvetica', sans-serif;
+   width: 85%;
+}
+
+.more-info caption {
+   font-size: 150%;
+   border-bottom: 1px solid black;
 }
 
 
@@ -525,6 +617,21 @@ div.product-box button {
    font-size: 120%;
 }
 
+.kim-jestesmy {
+   margin-top: 5em;
+   margin-bottom: 5em;
+}
+
+.budynek {
+   width: 500px;
+   height: auto;
+   position: absolute;
+   top: 50%;
+   left: 55%;
+   transform: translate(0, -50%);
+}
+
+
 /* ========== KONTAKT ========= */
 
 #kontakt header {
@@ -556,6 +663,18 @@ section.map {
 
 .map {
    margin-bottom: 2em; 2
+}
+
+/* ========== WARUNKI SPRZEDAŻY ========= */
+
+html#warunki header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+   height: 500px;
+}
+
+.warunki-sprzedazy h2, .warunki-sprzedazy h3 {
+   text-align: center;
 }
 
 /* ========== MEDIA QUERIES ========= */
