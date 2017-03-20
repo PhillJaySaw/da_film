@@ -78,6 +78,11 @@ button:hover {
   clear: both;
 }
 
+button,
+input[type="submit"] {
+   outline: none;
+}
+
 .text-box {
    width: 500px;
    color: #E0E1DD;
@@ -119,6 +124,9 @@ main h1 {
    position: relative;
 }
 
+li:hover {
+   transform: scale(1.2);
+}
 
 /* ========== Page Header + nav  ========== */
 
@@ -562,6 +570,80 @@ div.product-box button {
    border-bottom: 1px solid black;
 }
 
+/* ================= KALKULATOR ================= */
+
+#kalkulator header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+}
+
+#calcForm {
+   font-family: 'Helvtica'. sans-serif;
+   background-color: #ddd;
+   padding: 3em;
+   padding-bottom: 2em;
+   width: 900px;
+   margin: 5em auto 25em auto;
+   border-radius: 7px;
+}
+
+.wynik {
+   font-family: 'Helvetica', sans-serif;
+   margin-top: 1.7em;
+}
+
+#calcForm input[type="text"] {
+   border: none;
+   padding: 3px 5px;
+   display: block;
+   margin-bottom: 1em;
+}
+
+#calcForm input:disabled {
+   background: #aaa;
+   border: solid #777 1px;
+}
+
+#calcButton {
+   padding: .5em 1em;
+   background: #EEE;
+   border: solid #333 1px;
+   box-shadow: none;
+   font-size: 100%;
+   display: block;
+   color: #333;
+   font-weight: 700;
+}
+
+#calcForm label {
+   font-size: 110%;
+   font-family: 'Helvetica', sans-serif;
+   font-weight: 300;
+}
+
+#calcButton:hover { background: #AAA; }
+
+#calcForm span {
+   display: inline-block;
+   margin-right: 1em;
+}
+
+#selectType {
+   display: block;
+   margin-bottom: 2em;
+   border-radius: 0;
+   font-size: 110%;
+}
+
+.error {
+   color: red;
+}
+
+#kalkulator footer {
+   /*position: absolute;
+   top: 100%;
+   transform: translate(0, -100%);*/
+}
 
 /* ========== O NAS ========= */
 

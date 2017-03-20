@@ -8,7 +8,7 @@ $(document).ready(function() {
    $(function(){
    $('.more-less-button').click(function () {
       $(this).text(function(i, text){
-          return text === "mniej..." ? "więcej..." : "mniej...";
+          return text === "mehr info" ? "mehr info" : "weniger info";
       })
    });
 })

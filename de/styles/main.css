@@ -107,6 +107,16 @@ main h1 {
    left: 10%;
 }
 
+.header-box-two {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(0, -50%);
+}
+.header-box-two h1 {
+   font-size: 450%;
+}
+
 .header-box h1 {
    font-size: 450%;
    color:
@@ -582,9 +592,8 @@ div.product-box button {
 
 .site-title {
    position: absolute;
-   left: 50%;
+   left: 10%;
    top: 45%;
-   transform: translate(-50%,0);
    font-size: 400%;
 }
 
@@ -675,6 +684,40 @@ html#warunki header {
 
 .warunki-sprzedazy h2, .warunki-sprzedazy h3 {
    text-align: center;
+}
+
+/* ========== Impressum ========= */
+
+html#impressum header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+   height: 300px;
+
+}
+
+.impressum-par{
+   font-family: 'Helvetica', sans-serif;
+   text-align: left;
+   margin: 3em 0 1em 0;
+}
+
+html#impressum h3 {
+   font-size: 200%;
+}
+
+html#impressum p {
+   font-size: 120%;
+}
+
+#impressum .logo {
+   width: 350px;
+   height: auto;
+}
+
+#impressum footer {
+   position: absolute;
+   top: 100%;
+   transform: translate(0, -100%);
 }
 
 /* ========== MEDIA QUERIES ========= */
