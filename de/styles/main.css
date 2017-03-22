@@ -54,6 +54,10 @@ h3 {
    font-weight: 400;
 }
 
+.alert { color: red; }
+
+.underline { text-decoration: underline; }
+
 section {
    padding-top: 4em;
    padding-bottom: 8.5em;
@@ -559,13 +563,16 @@ div.product-box button {
 .more-info {
    clear: both;
    margin-bottom: 2em;
+   padding-left: 5em;
+   padding-right: 5em;
+   font-family: 'Helvetica', sans-serif;
 }
 
 .more-info table {
    margin: 0 auto;
    margin-bottom: 5em;
    font-family: 'Helvetica', sans-serif;
-   width: 85%;
+   width: 100%;
 }
 
 .more-info caption {
@@ -714,11 +721,6 @@ html#impressum p {
    height: auto;
 }
 
-#impressum footer {
-   position: absolute;
-   top: 100%;
-   transform: translate(0, -100%);
-}
 
 /* ========== MEDIA QUERIES ========= */
 
