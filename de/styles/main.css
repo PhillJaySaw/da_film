@@ -534,13 +534,16 @@ div.product-img {
    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
-.worsmiec .product-img {
-   background: url("../media/workismiec.png") no-repeat center;
-}
-
-.worspec .product-img {
-   background: url("../media/azbest.png") no-repeat center;
-}
+.worsmiec .product-img { background: url("../media/workismiec.png") no-repeat center; }
+.worspec .product-img { background: url("../media/azbest.png") no-repeat center; }
+.folia-ogien .product-img { background: url("../media/foliepe.png") no-repeat center; }
+.folia-rekaw .product-img { background: url("../media/rekaw.png") no-repeat center; }
+.folia-termo .product-img { background: url("../media/termokurczliwa.png") no-repeat center; }
+.folia-tasma .product-img { background: url("../media/tasma.png") no-repeat center; }
+.folia-ochr .product-img { background: url("../media/ochronna.png") no-repeat center; }
+.folia-bar .product-img { background: url("../media/barierowa.png") no-repeat center; }
+.folia-bud .product-img { background: url("../media/budowlana.png") no-repeat center; }
+.folia-czarno .product-img { background: url("../media/czarno_biala.jpg") no-repeat center; }
 
 div.product-text {
    padding: 1.5em;
