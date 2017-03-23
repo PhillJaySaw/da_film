@@ -54,6 +54,10 @@ h3 {
    font-weight: 400;
 }
 
+.alert { color: red; }
+
+.underline { text-decoration: underline; }
+
 section {
    padding-top: 4em;
    padding-bottom: 8.5em;
@@ -105,6 +109,16 @@ main h1 {
    position: absolute;
    top: 20%;
    left: 10%;
+}
+
+.header-box-two {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(0, -50%);
+}
+.header-box-two h1 {
+   font-size: 450%;
 }
 
 .header-box h1 {
@@ -520,13 +534,16 @@ div.product-img {
    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
-.worsmiec .product-img {
-   background: url("../media/workismiec.png") no-repeat center;
-}
-
-.worspec .product-img {
-   background: url("../media/azbest.png") no-repeat center;
-}
+.worsmiec .product-img { background: url("../media/workismiec.png") no-repeat center; }
+.worspec .product-img { background: url("../media/azbest.png") no-repeat center; }
+.folia-ogien .product-img { background: url("../media/foliepe.png") no-repeat center; }
+.folia-rekaw .product-img { background: url("../media/rekaw.png") no-repeat center; }
+.folia-termo .product-img { background: url("../media/termokurczliwa.png") no-repeat center; }
+.folia-tasma .product-img { background: url("../media/tasma.png") no-repeat center; }
+.folia-ochr .product-img { background: url("../media/ochronna.png") no-repeat center; }
+.folia-bar .product-img { background: url("../media/barierowa.png") no-repeat center; }
+.folia-bud .product-img { background: url("../media/budowlana.png") no-repeat center; }
+.folia-czarno .product-img { background: url("../media/czarno_biala.jpg") no-repeat center; }
 
 div.product-text {
    padding: 1.5em;
@@ -549,13 +566,16 @@ div.product-box button {
 .more-info {
    clear: both;
    margin-bottom: 2em;
+   padding-left: 5em;
+   padding-right: 5em;
+   font-family: 'Helvetica', sans-serif;
 }
 
 .more-info table {
    margin: 0 auto;
    margin-bottom: 5em;
    font-family: 'Helvetica', sans-serif;
-   width: 85%;
+   width: 100%;
 }
 
 .more-info caption {
@@ -582,9 +602,8 @@ div.product-box button {
 
 .site-title {
    position: absolute;
-   left: 50%;
+   left: 10%;
    top: 45%;
-   transform: translate(-50%,0);
    font-size: 400%;
 }
 
@@ -676,6 +695,35 @@ html#warunki header {
 .warunki-sprzedazy h2, .warunki-sprzedazy h3 {
    text-align: center;
 }
+
+/* ========== Impressum ========= */
+
+html#impressum header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+   height: 300px;
+
+}
+
+.impressum-par{
+   font-family: 'Helvetica', sans-serif;
+   text-align: left;
+   margin: 3em 0 1em 0;
+}
+
+html#impressum h3 {
+   font-size: 200%;
+}
+
+html#impressum p {
+   font-size: 120%;
+}
+
+#impressum .logo {
+   width: 350px;
+   height: auto;
+}
+
 
 /* ========== MEDIA QUERIES ========= */
 
