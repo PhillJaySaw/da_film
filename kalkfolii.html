@@ -33,6 +33,17 @@
          </div>
       </header>
       <main>
+            <section class="container instrukcja">
+               <div class="row">
+                  <h2>Instrukcja</h2>
+                  <ul>
+                     <li>Wybierz interesujący Cie rodzaj folii, dla której chcesz obliczyć wagę</li>
+                     <li>Następnie podaj jej wymiary, np.: szerokość - 4.5, długość - 50, grubość - 110</li>
+                     <li>Nastepnie wciśnij 'oblicz'</li>
+                  </ul>
+                  <span class="error">Uwaga!</span> prosimy zwrócić uwagę na to aby używać kropek zamiast przecinków.
+               </div>
+            </section>
             <form id="calcForm">
             <select id="selectType">
                <option value="no-type">proszę wybrać rodzaj folii</option>
@@ -51,7 +62,7 @@
             </span>
             <span>
                <label for="grubosc">Grubość</label>
-               <input type="text" id="grubosc" value="" placeholder="milimetry" required>
+               <input type="text" id="grubosc" value="" placeholder="mikrony" required>
             </span>
 
             <span>
