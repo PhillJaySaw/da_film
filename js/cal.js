@@ -5,22 +5,22 @@ var zakladki;
 const gestosc = 0.92;
 
 function calcPolRekawTasma(a,b,c) {
-   var waga = a * b * c * gestosc;
+   var waga = a * b * (c/1000) * gestosc;
    return waga.toFixed(3);
 }
 
 function calcRekaw(a,b,c) {
-   var waga = a * b * c * gestosc * 2;
+   var waga = a * b * (c/1000) * gestosc * 2;
    return waga.toFixed(3);
 }
 
 function calcWorkiPlasko(a,b,c) {
-   var waga = a * b * c * gestosc * 2;
+   var waga = a * b * (c/1000) * gestosc * 2;
    return waga.toFixed(3);
 }
 
 function calcWorKapZakladki(a,b,c,d) {
-   var waga = (a + d) * b * c * gestosc * 2;
+   var waga = (a + d) * b * (c/1000) * gestosc * 2;
    return waga.toFixed(3);
 }
 
