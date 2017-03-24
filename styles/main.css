@@ -17,11 +17,11 @@ font-family: 'Quattrocento Sans', sans-serif;
 /* ========== General styles  ========= */
 
 body {
-   font-family: 'Quattrocento Sans', sans-serif;
+   /*ont-family: 'Quattrocento Sans', sans-serif;*/
    overflow-x: hidden;
 }
 
-p {
+p, span, ul, select, html, form, input {
    font-family: 'Helvetica', sans-serif;
    font-weight: 300;
 }
@@ -754,6 +754,21 @@ section.map {
 
 .map {
    margin-bottom: 2em; 2
+}
+
+#contact-formular {
+   width: 60%;
+   display: inline;
+}
+
+#contact-form form {
+   margin: 0 auto;
+   font-size: 140%;
+   width: 60%;
+}
+
+#contact-form input {
+   width: 300px;
 }
 
 /* ========== WARUNKI SPRZEDAŻY ========= */
