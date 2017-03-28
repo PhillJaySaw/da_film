@@ -541,6 +541,9 @@ div.product-img {
 .folia-bar .product-img { background: url("../media/barierowa.png") no-repeat center; }
 .folia-bud .product-img { background: url("../media/budowlana.png") no-repeat center; }
 .folia-czarno .product-img { background: url("../media/czarno_biala.jpg") no-repeat center; }
+.arkusze-male .product-img { background: url("../media/malerolki.png") no-repeat center; }
+.arkusze-perferowane .product-img { background: url("../media/perferowane.jpg") no-repeat center; }
+.arkusze-luzne .product-img { background: url("../media/luzne.png") no-repeat center; }
 
 div.product-text {
    padding: 1.5em;
