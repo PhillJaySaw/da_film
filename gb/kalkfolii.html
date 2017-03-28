@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html id="kalkulator" lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>D.A. Film - Film calculator</title>
+      <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Quattrocento+Sans&amp;subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="styles/normalize.css">
+      <link rel="stylesheet" href="styles/skeleton.css">
+      <link rel="stylesheet" href="styles/main.css">
+   </head>
+   <body>
+      <nav class="group main-nav">
+         <!-- <img src="media/logo_hor.png" alt="logo da film"> -->
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="oferta.html">Products</a></li>
+            <li><a href="kalkfolii.html">Film calculator</a></li>
+            <li><a href="onas.html">About Us</a></li>
+            <li><a href="kontakt.php">Contact</a></li>
+            <li><a href="warsprzed.html">Conditions of Sale</a></li>
+         </ul>
+      </nav>
+      <header id="wybor">
+         <div class="header-box">
+            <h1>Film Calculator</h1>
+            <div class="text-box">
+               <p>
+                  You can use our calculator to find out hom much your
+                  required amount of film would weigh.
+               </p>
+            </div>
+         </div>
+      </header>
+      <main>
+            <section class="container instrukcja">
+               <div class="row">
+                  <h2>Instructions</h2>
+                  <ul>
+                     <li>Choose a film type</li>
+                     <li>Type in the dimensions, for example: width - 4.5, length - 50, thickness - 110</li>
+                     <li>Press 'calculate'</li>
+                  </ul>
+                  <span class="error">Keep in mind!</span> For the calculator to work properly you need to use <strong>dots</strong> instead of<strong>commas</strong>.
+               </div>
+            </section>
+            <form id="calcForm">
+            <select id="selectType">
+               <option value="no-type">choose a film type</option>
+               <option value="calcPolRekawTasma">Half sleeve, tape</option>
+               <option value="calcRekaw">Sleeve</option>
+               <option value="calcWorkiPlasko">Flat bags(without folds)</option>
+               <option value="calcWorKapZakladki">Bags and hoods with folds</option>
+            </select>
+            <span>
+               <label for="szerokosc">Width</label>
+               <input type="text" id="szerokosc" value="" placeholder="metry" required>
+            </span>
+            <span>
+               <label for="dlugosc">Length</label>
+               <input type="text" id="dlugosc" value="" placeholder="metry" required>
+            </span>
+            <span>
+               <label for="grubosc">Thickness</label>
+               <input type="text" id="grubosc" value="" placeholder="mikrony" required>
+            </span>
+
+            <span>
+               <label for="zakladki">Folds</label>
+               <input type="text" id="zakladki" value="" placeholder="metry" disabled>
+            </span>
+
+            <button type="button" id="calcButton" name="button">calculate</button>
+
+            <h3 class="wynik"><strong>result: <span id="wynik"></span></strong></h3>
+         </form>
+      </main>
+      <footer class="group">
+         <span class="copy">Phillip Ławniczak &copy; 2017</span>
+         <nav class="footer-nav">
+            <a href="#">privacy policy</a>
+            <a href="kontakt.php">contact</a>
+         </nav>
+      </footer>
+
+   <script src="js/cal.js"></script>
+   </body>
+</html>

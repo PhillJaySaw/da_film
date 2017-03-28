@@ -62,7 +62,7 @@
                    ?>
                    <form id="contact-formular"  action="" method="POST" enctype="multipart/form-data">
                    <input type="hidden" name="action" value="submit">
-                   Imię i Nazwisko:<br>
+                   Imię i Nazwisko/Nazwa firmy:<br>
                    <input name="name" type="text" value="" size="50"/><br>
                    Twój email:<br>
                    <input name="email" type="text" value="" size="50"/><br>
