@@ -550,12 +550,36 @@ div.product-text p {
    margin-bottom: .8em;
 }
 
+/*
 div.product-box button {
    float: right;
-   clear: both;
-   margin-right: 3em;
+   display: inline;
+   margin-right: 2em;
    margin-bottom: 1em;
+   margin-left: 0;
 }
+
+div.product-box button.zapytaj-button {
+   margin-right: 1.5em;
+}
+*/
+
+/* =============== TEST ================== */
+
+
+.button-wrapper {
+   float: right;
+   margin-right: 2em;
+   margin-bottom: .4em;
+   clear: both;
+}
+
+div.product-box button.zapytaj-button {
+   margin-right: 1em;
+}
+
+
+/* ======================================= */
 
 .more-info {
    clear: both;

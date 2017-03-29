@@ -2,7 +2,7 @@ $(document).ready(function() {
    $('.more-info').toggle(0);
 
    $('.more-less-button').on('click', function() {
-      $(this).prev().toggle(400);
+      $(this).parent().prev().toggle(400);
    });
 
    $(function(){

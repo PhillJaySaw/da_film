@@ -76,7 +76,7 @@
                    {
                    $name=$_REQUEST['name'];
                    $email=$_REQUEST['email'];
-                   $message=$_REQUEST['message'];
+                   $message="Wiadomość od: $name, <$email>\r\n".$_REQUEST['message'];
                    if (($name=="")||($email=="")||($message==""))
                        {
                		echo "Wszystkie pola są wymagane, prosimy wypełnić <a href=\"\">formularz</a> ponownie.";
@@ -84,7 +84,7 @@
                    else{
                	    $from="Od: $name<$email>\r\nReturn-path: $email";
                        $subject="Wiadomość wysłana za pomocą formularza kontaktowego";
-               		   mail("philliplawniczak@gmail.com", $subject, $message, $from);
+               		   mail("info@da-film.com", $subject, $message, $from);
                		echo "Wiadomość wysłana!";
                	    }
                    }

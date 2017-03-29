@@ -550,11 +550,15 @@ div.product-text p {
    margin-bottom: .8em;
 }
 
-div.product-box button {
+.button-wrapper {
    float: right;
+   margin-right: 2em;
+   margin-bottom: .4em;
    clear: both;
-   margin-right: 3em;
-   margin-bottom: 1em;
+}
+
+div.product-box button.zapytaj-button {
+   margin-right: 1em;
 }
 
 .more-info {

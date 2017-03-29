@@ -77,7 +77,7 @@
                    {
                    $name=$_REQUEST['name'];
                    $email=$_REQUEST['email'];
-                   $message=$_REQUEST['message'];
+                   $message="Wiadomość od: $name, <$email>\r\n".$_REQUEST['message'];
                    if (($name=="")||($email=="")||($message==""))
                        {
                		echo "Wszystkie pola są wymagane, prosimy wypełnić <a href=\"\">formularz</a> ponownie.";
