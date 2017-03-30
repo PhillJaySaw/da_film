@@ -2,7 +2,7 @@
 <html id="kontakt" lang="pl">
    <head>
       <meta charset="utf-8">
-      <title>D.A. Film - Worki i kaptury - zapytanie</title>
+      <title>D.A. Film - Arkusze i płachty PE - zapytanie</title>
       <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Quattrocento+Sans&amp;subset=latin-ext" rel="stylesheet">
       <link rel="stylesheet" href="styles/normalize.css">
       <link rel="stylesheet" href="styles/skeleton.css">
@@ -22,7 +22,7 @@
       </nav>
       <header>
          <div class="header-box">
-            <h1>Worki i kaptury - zapytanie</h1>
+            <h1>Arkusze i płachty - zapytanie</h1>
             <div class="text-box">
                <p>
                   Jeżeli masz jakieś pytania co do konkretnego produktu,
@@ -52,12 +52,18 @@
                    <h3>Wybierz produkt którym jesteś zainteresowany</h3>
                    <select class="product-select" name="nazwa-produktu">
                       <option value="">wybierz rodzaj worków</option>
-                      <option value="worki śmieciowe">Worki śmieciowe</option>
-                      <option value="worki azbest UE niebieskie">Worki na azbest - Standard UE, niebieskie, drukowane</option>
-                      <option value="worki azbest UE bezbarwne druk">Worki na azbest - Standard UE, bezbarwne, drukowane</option>
-                      <option value="worki azbest UE bezbarwne">Worki na azbest - Standard UE, bezbarwne</option>
-                      <option value="worki azbest UK">Worki na azbest - Standard UK</option>
-                      <option value="kaptur termokurczliwy">Kaptur termokurczliwy</option>
+                      <option value="arkusze płachty luzem">Płachty - arkusze pakowane luzem w worki lub kartony</option>
+                      <option value="arkusze i płachty perferowane na rolce">Arkusze i płachty - perferowane na rolce</option>
+                      <option value="male rolki">Małe rolki</option>
+                   </select>
+
+                   <h3>Wybierz typ</h3>
+                   <select class="product-select" name="rodzaj-folii">
+                      <option value="">wybierz typ</option>
+                      <option value="taśma">taśma</option>
+                      <option value="półrękaw">półrękaw</option>
+                      <option value="rękaw">rękaw</option>
+                      <option value="rękaw z zakłądkami">rękaw z zakładkami</option>
                    </select>
 
                    <h3>Wymiary:</h3>
@@ -81,11 +87,11 @@
 
                      <h3>Sposób pakowania</h3>
                      <select class="product-select" name="sposob-pakowania">
+                        <option value="brak">---</option>
                         <option value="kartony">kartony</option>
-                        <option value="euro-box">euro-box</option>
-                        <option value="zrolowane">zrolowane</option>
-                        <option value="perforowane na rolce">perforowane na rolce</option>
+                        <option value="arkusze perferowane na rolce">arkusze perferowane na rolce</option>
                         <option value="worki zbiorcze">worki zbiorcze</option>
+                        <option value="euro-box">euro-box</option>
                      </select>
                      <input type="text" name="ilosc-box" value="" placeholder="ilość">
 
@@ -138,10 +144,10 @@
 
                    $message="Wiadomość od: $name, <$email>, tel. $numer \r\n".
                             "PRODUKT: ".$nazwaProduktu."\r\n\r\n".
-                            "Szerokość: ".$szerokosc." metry\r\n".
-                            "Zakładka: ".$zakladka." metry\r\n".
-                            "Długość: ".$dlugosc." metry\r\n".
-                            "Grubość: ".$grubosc." mikrony\r\n".
+                            "Szerokość: ".$szerokosc."metry\r\n".
+                            "Zakładka: ".$zakladka."metry\r\n".
+                            "Długość: ".$dlugosc."metry\r\n".
+                            "Grubość: ".$grubosc."mikrony\r\n".
                             "Kolor: ".$kolor."\r\n".
                             "Ilość: ".$ilosc." sztuk\r\n\r\n".
                             "Sposób pakowanie: ".$pakowanie."\r\n"."ilość: ".$iloscBox."\r\n".

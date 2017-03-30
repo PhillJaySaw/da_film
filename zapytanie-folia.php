@@ -2,7 +2,7 @@
 <html id="kontakt" lang="pl">
    <head>
       <meta charset="utf-8">
-      <title>D.A. Film - Worki i kaptury - zapytanie</title>
+      <title>D.A. Film - Folie PE - zapytanie</title>
       <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Quattrocento+Sans&amp;subset=latin-ext" rel="stylesheet">
       <link rel="stylesheet" href="styles/normalize.css">
       <link rel="stylesheet" href="styles/skeleton.css">
@@ -22,7 +22,7 @@
       </nav>
       <header>
          <div class="header-box">
-            <h1>Worki i kaptury - zapytanie</h1>
+            <h1>Folia PE - zapytanie</h1>
             <div class="text-box">
                <p>
                   Jeżeli masz jakieś pytania co do konkretnego produktu,
@@ -51,21 +51,24 @@
 
                    <h3>Wybierz produkt którym jesteś zainteresowany</h3>
                    <select class="product-select" name="nazwa-produktu">
-                      <option value="">wybierz rodzaj worków</option>
-                      <option value="worki śmieciowe">Worki śmieciowe</option>
-                      <option value="worki azbest UE niebieskie">Worki na azbest - Standard UE, niebieskie, drukowane</option>
-                      <option value="worki azbest UE bezbarwne druk">Worki na azbest - Standard UE, bezbarwne, drukowane</option>
-                      <option value="worki azbest UE bezbarwne">Worki na azbest - Standard UE, bezbarwne</option>
-                      <option value="worki azbest UK">Worki na azbest - Standard UK</option>
-                      <option value="kaptur termokurczliwy">Kaptur termokurczliwy</option>
+                      <option value="">wybierz rodzaj folii</option>
+                      <option value="Folie budowlane">Folie budowlane</option>
+                      <option value="Folie nierozprzestrzeniające ognia - klasa B2">Folie nierozprzestrzeniające ognia - klasa B2</option>
+                      <option value="Folie barierowe dla pary i wilgoci">Folie barierowe dla pary i wilgoci</option>
+                      <option value="Folie ochronne">Folie ochronne</option>
+                      <option value="Rękawy foliowe">Rękawy foliowe</option>
+                      <option value="Folie termokurczliwe">Folie termokurczliwe</option>
+                      <option value="Folia PE Biało-Czarne">Folia PE Biało-Czarne</option>
+                      <option value="Taśmy ostrzegawcze">Taśmy ostrzegawcze</option>
                    </select>
 
                    <h3>Wymiary:</h3>
                      <label for="szerokosc">szerokość</label>
                      <input type="text" name="szerokosc" value="" placeholder="metry">
 
-                     <label for="zakladka">zakładka</label>
+                     <!--<label for="zakladka">zakładka</label>
                      <input type="text" name="zakladka" value="" placeholder="metry">
+                     -->
 
                      <label for="dlugosc">długość</label>
                      <input type="text" name="dlugosc" value="" placeholder="metry">
@@ -81,11 +84,11 @@
 
                      <h3>Sposób pakowania</h3>
                      <select class="product-select" name="sposob-pakowania">
+                        <option value="brak">---</option>
                         <option value="kartony">kartony</option>
-                        <option value="euro-box">euro-box</option>
-                        <option value="zrolowane">zrolowane</option>
-                        <option value="perforowane na rolce">perforowane na rolce</option>
+                        <option value="arkusze perferowane na rolce">arkusze perferowane na rolce</option>
                         <option value="worki zbiorcze">worki zbiorcze</option>
+                        <option value="euro-box">euro-box</option>
                      </select>
                      <input type="text" name="ilosc-box" value="" placeholder="ilość">
 
@@ -118,7 +121,7 @@
                    /* Dane produktu */
                    $nazwaProduktu=$_REQUEST['nazwa-produktu'];
                    $szerokosc=$_REQUEST['szerokosc'];
-                   $zakladka=$_REQUEST['zakldaka'];
+                   /*$zakladka=$_REQUEST['zakldaka'];*/
                    $dlugosc=$_REQUEST['dlugosc'];
                    $grubosc=$_REQUEST['grubosc'];
                    $kolor=$_REQUEST['kolor'];
@@ -138,10 +141,9 @@
 
                    $message="Wiadomość od: $name, <$email>, tel. $numer \r\n".
                             "PRODUKT: ".$nazwaProduktu."\r\n\r\n".
-                            "Szerokość: ".$szerokosc." metry\r\n".
-                            "Zakładka: ".$zakladka." metry\r\n".
-                            "Długość: ".$dlugosc." metry\r\n".
-                            "Grubość: ".$grubosc." mikrony\r\n".
+                            "Szerokość: ".$szerokosc."metry\r\n".
+                            "Długość: ".$dlugosc."metry\r\n".
+                            "Grubość: ".$grubosc."mikrony\r\n".
                             "Kolor: ".$kolor."\r\n".
                             "Ilość: ".$ilosc." sztuk\r\n\r\n".
                             "Sposób pakowanie: ".$pakowanie."\r\n"."ilość: ".$iloscBox."\r\n".

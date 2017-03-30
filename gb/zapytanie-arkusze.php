@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html id="kontakt" lang="pl">
+<html id="kontakt" lang="en">
    <head>
       <meta charset="utf-8">
-      <title>D.A. Film - Worki i kaptury - zapytanie</title>
+      <title>D.A. Film - PE covers and sheets - ask about product</title>
       <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Quattrocento+Sans&amp;subset=latin-ext" rel="stylesheet">
       <link rel="stylesheet" href="styles/normalize.css">
       <link rel="stylesheet" href="styles/skeleton.css">
@@ -13,21 +13,21 @@
       <nav class="group main-nav">
          <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="oferta.html">Oferta</a></li>
-            <li><a href="kalkfolii.html">Kalkulator folii</a></li>
-            <li><a href="onas.html">O Nas</a></li>
-            <li><a href="kontakt.php">Kontakt</a></li>
-            <li><a href="warsprzed.html">Warunki sprzedaży</a></li>
+            <li><a href="oferta.html">Products</a></li>
+            <li><a href="kalkfolii.html">Film calculator</a></li>
+            <li><a href="onas.html">About Us</a></li>
+            <li><a href="kontakt.html">Contact</a></li>
+            <li><a href="warsprzed.html">Conditions of Sale</a></li>
          </ul>
       </nav>
       <header>
          <div class="header-box">
-            <h1>Worki i kaptury - zapytanie</h1>
+            <h1>PE covers and sheets - ask about product</h1>
             <div class="text-box">
                <p>
-                  Jeżeli masz jakieś pytania co do konkretnego produktu,
-                  lub chcesz nam wysłać wymiary produktu jakimi jesteś zainteresowany,
-                  skorzystaj z naszego formularza.
+                  If you have any questions about a particular product,
+                  Or you want to send us the dimensions of the product you are interested in,
+                  then please use our form.
                </p>
             </div>
          </div>
@@ -42,69 +42,75 @@
                    ?>
                    <form id="zapytanie-form" class="" action="" method="POST" enctype="multipart/form-data">
                    <input type="hidden" name="action" value="submit">
-                   <span class="error">*</span>Imię i Nazwisko / Firma:<br>
+                   <span class="error">*</span>Name / Company:<br>
                    <input name="name" type="text" value="" size="50" required><br>
-                   Numer kontaktowy:<br>
+                   Contact number:<br>
                    <input name="numer" type="text" value="" size="50"><br>
-                   <span class="error">*</span>Twój email:<br>
+                   <span class="error">*</span>Your email:<br>
                    <input name="email" type="email" value="" size="50" required><br>
 
-                   <h3>Wybierz produkt którym jesteś zainteresowany</h3>
+                   <h3>Choose the product you are interested in</h3>
                    <select class="product-select" name="nazwa-produktu">
-                      <option value="">wybierz rodzaj worków</option>
-                      <option value="worki śmieciowe">Worki śmieciowe</option>
-                      <option value="worki azbest UE niebieskie">Worki na azbest - Standard UE, niebieskie, drukowane</option>
-                      <option value="worki azbest UE bezbarwne druk">Worki na azbest - Standard UE, bezbarwne, drukowane</option>
-                      <option value="worki azbest UE bezbarwne">Worki na azbest - Standard UE, bezbarwne</option>
-                      <option value="worki azbest UK">Worki na azbest - Standard UK</option>
-                      <option value="kaptur termokurczliwy">Kaptur termokurczliwy</option>
+                      <option value="">---</option>
+                      <option value="arkusze płachty luzem">Covers - packed loose in bags or cartons</option>
+                      <option value="arkusze i płachty perferowane na rolce">Sheets - perfered on roll</option>
+                      <option value="male rolki">Small rolls</option>
                    </select>
 
-                   <h3>Wymiary:</h3>
-                     <label for="szerokosc">szerokość</label>
-                     <input type="text" name="szerokosc" value="" placeholder="metry">
+                   <h3>Choose a type</h3>
+                   <select class="product-select" name="rodzaj-folii">
+                      <option value="">wybierz typ</option>
+                      <option value="taśma">tape</option>
+                      <option value="półrękaw">half sleeve</option>
+                      <option value="rękaw">sleeve</option>
+                      <option value="rękaw z zakłądkami">sleeve with folds</option>
+                   </select>
 
-                     <label for="zakladka">zakładka</label>
-                     <input type="text" name="zakladka" value="" placeholder="metry">
+                   <h3>Dimensions</h3>
+                     <label for="szerokosc">width</label>
+                     <input type="text" name="szerokosc" value="" placeholder="meters">
 
-                     <label for="dlugosc">długość</label>
-                     <input type="text" name="dlugosc" value="" placeholder="metry">
+                     <label for="zakladka">folds</label>
+                     <input type="text" name="zakladka" value="" placeholder="meters">
 
-                     <label for="grubosc">grubość</label>
-                     <input type="text" name="grubosc" value="" placeholder="mikrony">
+                     <label for="dlugosc">length</label>
+                     <input type="text" name="dlugosc" value="" placeholder="meters">
 
-                     <label for="kolor">kolor</label>
+                     <label for="grubosc">thickness</label>
+                     <input type="text" name="grubosc" value="" placeholder="microns">
+
+                     <label for="kolor">color</label>
                      <input type="text" name="kolor" value="">
 
-                     <label for="ilosc">ilość produktu</label>
-                     <input type="text" name="ilosc" value="" placeholder="sztuki">
+                     <label for="ilosc">product amount</label>
+                     <input type="text" name="ilosc" value="" placeholder="quantity">
 
-                     <h3>Sposób pakowania</h3>
+                     <h3>Packeging type</h3>
                      <select class="product-select" name="sposob-pakowania">
-                        <option value="kartony">kartony</option>
+                        <option value="brak">---</option>
+                        <option value="kartony">box</option>
+                        <option value="arkusze perferowane na rolce">Sheets perfered on roll</option>
+                        <option value="worki zbiorcze">Bulk bags</option>
                         <option value="euro-box">euro-box</option>
-                        <option value="zrolowane">zrolowane</option>
-                        <option value="perforowane na rolce">perforowane na rolce</option>
-                        <option value="worki zbiorcze">worki zbiorcze</option>
                      </select>
-                     <input type="text" name="ilosc-box" value="" placeholder="ilość">
+                     <input type="text" name="ilosc-box" value="" placeholder="quantity">
 
-                     <h3>Dodatki</h3>
+                     <h3>Extras</h3>
                      <input type="checkbox" name="check_list[]" value="uv"> UV <br>
                      <input type="checkbox" name="check_list[]" value="antislip"> Anti Slip <br>
                      <input type="checkbox" name="check_list[]" value="antiblock"> Anti block <br>
                      <input type="checkbox" name="check_list[]" value="roughsurface"> Rough surface <br>
                      <input type="checkbox" name="check_list[]" value="antirust"> Anti rust <br>
 
-                     <h3>Adres dostawy</h3>
-                     <input type="text" name="ulica-numer-lokalu" value="" placeholder="ulica, numer lokalu">
-                     <input type="text" name="kod-pocztowy" value="" placeholder="kod pocztowy">
-                     <input type="text" name="miasto" value="" placeholder="miasto">
-                     <input type="text" name="kraj" value="" placeholder="kraj">
+                     <h3>Shipping address</h3>
+                     <input type="text" name="ulica-numer-lokalu" value="" placeholder="street, apt./house number">
+                     <input type="text" name="kod-pocztowy" value="" placeholder="Postal Code">
+                     <input type="text" name="miasto" value="" placeholder="city">
+                     <input type="text" name="kraj" value="" placeholder="Country">
 
-                   <br>Pytanie / Dodatkowe uwagi:<br>
+                   <br>Questions / Additional remarks:<br>
                    <textarea name="message" cols="50" rows="100"></textarea><br>
-                   <input type="submit" value="Wyślij"/>
+                   <input type="submit" value="send"/>
                    </form>
                    <?php
                    }
@@ -138,10 +144,10 @@
 
                    $message="Wiadomość od: $name, <$email>, tel. $numer \r\n".
                             "PRODUKT: ".$nazwaProduktu."\r\n\r\n".
-                            "Szerokość: ".$szerokosc." metry\r\n".
-                            "Zakładka: ".$zakladka." metry\r\n".
-                            "Długość: ".$dlugosc." metry\r\n".
-                            "Grubość: ".$grubosc." mikrony\r\n".
+                            "Szerokość: ".$szerokosc."metry\r\n".
+                            "Zakładka: ".$zakladka."metry\r\n".
+                            "Długość: ".$dlugosc."metry\r\n".
+                            "Grubość: ".$grubosc."mikrony\r\n".
                             "Kolor: ".$kolor."\r\n".
                             "Ilość: ".$ilosc." sztuk\r\n\r\n".
                             "Sposób pakowanie: ".$pakowanie."\r\n"."ilość: ".$iloscBox."\r\n".
@@ -159,7 +165,7 @@
                	    $from="Od: $name<$email>\r\nReturn-path: $email";
                        $subject="Wiadomość wysłana za pomocą formularza kontaktowego";
                		   mail("info@da-film.com", $subject, $message, $from);
-                        echo "Formularz wysłany!";
+                        echo "Form has been sent!";
                	    }
                    }
                ?>
@@ -168,8 +174,8 @@
       <footer class="group">
          <span class="copy">Phillip Ławniczak &copy; 2017</span>
          <nav class="footer-nav">
-            <a href="#">Polityka prywatności</a>
-            <a href="kontakt.php">Kontakt</a>
+            <a href="#">privacy policy</a>
+            <a href="kontakt.php">contact</a>
          </nav>
       </footer>
 
