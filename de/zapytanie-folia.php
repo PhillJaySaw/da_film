@@ -53,7 +53,8 @@
                    <select class="product-select" name="nazwa-produktu">
                       <option value="">---</option>
                       <option value="Folie budowlane">Baufolien</option>
-                      <option value="Folie nierozprzestrzeniające ognia - klasa B2">FNichtfeuerweiterverbreitende Folien – klasse B2</option>
+                      <option value="Folie nierozprzestrzeniające ognia - klasa B2">Nichtfeuerweiterverbreitende Folien – klasse B2</option>
+                      <option value="Folia antystatyczna">Antistatische Folie</option>
                       <option value="Folie barierowe dla pary i wilgoci">Bampfbremsfolien für Dampf und Feuchtigkeit</option>
                       <option value="Folie ochronne">Schutzfolien</option>
                       <option value="Schlauchfolien">Schlauchfolien</option>

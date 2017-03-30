@@ -54,6 +54,7 @@
                       <option value="">wybierz rodzaj folii</option>
                       <option value="Folie budowlane">Folie budowlane</option>
                       <option value="Folie nierozprzestrzeniające ognia - klasa B2">Folie nierozprzestrzeniające ognia - klasa B2</option>
+                      <option value="Folia antystatyczna">Folia antystatyczna</option>
                       <option value="Folie barierowe dla pary i wilgoci">Folie barierowe dla pary i wilgoci</option>
                       <option value="Folie ochronne">Folie ochronne</option>
                       <option value="Rękawy foliowe">Rękawy foliowe</option>
