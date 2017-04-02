@@ -52,8 +52,8 @@
                    <h3>Choose the product you are interested in</h3>
                    <select class="product-select" name="nazwa-produktu">
                       <option value="">---</option>
-                      <option value="arkusze płachty luzem">Covers - packed loose in bags or cartons</option>
-                      <option value="arkusze i płachty perferowane na rolce">Sheets - perfered on roll</option>
+                      <option value="arkusze płachty luzem">Top sheets - packed loose in bags or cartons</option>
+                      <option value="arkusze i płachty perferowane na rolce">Top sheets and PE sheets - perforated on rolls</option>
                       <option value="male rolki">Small rolls</option>
                    </select>
 
@@ -89,7 +89,7 @@
                      <select class="product-select" name="sposob-pakowania">
                         <option value="brak">---</option>
                         <option value="kartony">box</option>
-                        <option value="arkusze perferowane na rolce">Sheets perfered on roll</option>
+                        <option value="arkusze perferowane na rolce">Sheets on rolls</option>
                         <option value="worki zbiorcze">Bulk bags</option>
                         <option value="euro-box">euro-box</option>
                      </select>

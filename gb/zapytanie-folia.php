@@ -54,10 +54,10 @@
                       <option value="">---</option>
                       <option value="Folie budowlane">Construction bags</option>
                       <option value="Folie nierozprzestrzeniające ognia - klasa B2">Non-fire spread films - class B2</option>
-                      <option value="Folia antystatyczna">Antistatic Film</option>
-                      <option value="Folie barierowe dla pary i wilgoci">Barrier films for steam and moisture</option>
+                      <option value="Folia antystatyczna">Antistatic Films</option>
+                      <option value="Folie barierowe dla pary i wilgoci">Vapor barier films</option>
                       <option value="Folie ochronne">Protective films</option>
-                      <option value="Rękawy foliowe">Foil sleeves</option>
+                      <option value="Rękawy foliowe">Tube films</option>
                       <option value="Folie termokurczliwe">Shrink films</option>
                       <option value="Folia PE Biało-Czarne">Black-White PE Film</option>
                       <option value="Taśmy ostrzegawcze">Warning tape</option>

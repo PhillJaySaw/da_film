@@ -57,7 +57,7 @@
                       <option value="worki azbest UE bezbarwne druk">asbestos EU Standard - colorless printed bags</option>
                       <option value="worki azbest UE bezbarwne">asbestos EU Standard – colorless bags</option>
                       <option value="worki azbest UK">asbestos UK standard – colorless and red, imprinted</option>
-                      <option value="kaptur termokurczliwy">Shrink Sleeves</option>
+                      <option value="kaptur termokurczliwy">Shrink Cover</option>
                    </select>
 
                    <h3>Dimensions</h3>
