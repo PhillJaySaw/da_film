@@ -18,6 +18,7 @@
             <li><a href="onas.html">O Nas</a></li>
             <li><a href="kontakt.php">Kontakt</a></li>
             <li><a href="warsprzed.html">Warunki sprzedaży</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
          </ul>
       </nav>
       <header>

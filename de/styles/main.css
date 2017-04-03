@@ -544,6 +544,8 @@ div.product-img {
 .arkusze-male .product-img { background: url("../media/malerolki.png") no-repeat center; }
 .arkusze-perferowane .product-img { background: url("../media/perferowane.jpg") no-repeat center; }
 .arkusze-luzne .product-img { background: url("../media/luzne.png") no-repeat center; }
+.worek-termo .product-img { background: url("../media/kaptur.png") no-repeat center; }
+.folia-antystat .product-img { background: url("../media/antystat.png") no-repeat center; }
 
 div.product-text {
    padding: 1.5em;
@@ -750,6 +752,14 @@ section.map {
 
 #kontakt img.icon {
    margin-right: 1em;
+}
+
+#kontak img[src="media/phone-call.png"] {
+   float: left;
+}
+
+.phone-number {
+   padding-left: 2.4em;
 }
 
 .kontakt-info {

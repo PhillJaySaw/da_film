@@ -538,6 +538,8 @@ div.product-img {
 .arkusze-male .product-img { background: url("../media/malerolki.png") no-repeat center; }
 .arkusze-perferowane .product-img { background: url("../media/perferowane.jpg") no-repeat center; }
 .arkusze-luzne .product-img { background: url("../media/luzne.png") no-repeat center; }
+.worek-termo .product-img { background: url("../media/kaptur.png") no-repeat center; }
+.folia-antystat .product-img { background: url("../media/antystat.png") no-repeat center; }
 
 div.product-text {
    padding: 1.5em;
@@ -773,6 +775,14 @@ section.map {
    margin-right: 1em;
 }
 
+#kontak img[src="media/phone-call.png"] {
+   float: left;
+}
+
+.phone-number {
+   padding-left: 2.4em;
+}
+
 .kontakt-info {
    margin-top: 2em;
 }
@@ -807,6 +817,42 @@ html#warunki header {
 .warunki-sprzedazy h2, .warunki-sprzedazy h3 {
    text-align: center;
 }
+
+/* ========== Impressum ========= */
+
+html#impressum header {
+   background: url("../media/folia.png") no-repeat;
+   background-size: cover;
+   height: 300px;
+
+}
+
+#impressum h1 {
+   position: absolute;
+   left: 5%;
+   top: 45%;
+   transform: translate(0, -50%;);
+}
+
+.impressum-par{
+   font-family: 'Helvetica', sans-serif;
+   text-align: left;
+   margin: 3em 0 1em 0;
+}
+
+html#impressum h3 {
+   font-size: 200%;
+}
+
+html#impressum p {
+   font-size: 120%;
+}
+#impressum .logo {
+   width: 350px;
+   height: auto;
+}
+
+
 
 /* ========== MEDIA QUERIES ========= */
 

@@ -17,15 +17,15 @@
             <li><a href="onas.html">About Us</a></li>
             <li><a href="kontakt.php">Contact</a></li>
             <li><a href="warsprzed.html">Conditions of Sale</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
          </ul>
       </nav>
       <header>
          <div class="header-box">
-            <h1>Kontakt</h1>
+            <h1>Contact</h1>
             <div class="text-box">
                <p>
-                  We are always available to our customers and
-                  we will help you choose the right products.
+                  We are always available to our customers and we would like to help you choose the right products.
                </p>
             </div>
          </div>
@@ -33,10 +33,10 @@
       <main class="container">
          <section class="row kontakt-info">
             <div class="four columns kontakt">
-               <img src="media/phone-call.png" alt="" class="icon">+48 56 621 06 33
+               <img src="media/phone-call.png" alt="" class="icon">+48 56 621 06 33<br><div class="phone-number">+48 56 612 60 37</div>
             </div>
             <div class="four columns kontakt">
-               <img src="media/smartphone.png" alt="" class="icon">+48 571 402 772
+               <img src="media/smartphone.png" alt="" class="icon">+48 571 402 770
             </div>
             <div class="four columns kontakt">
                <img src="media/email.png" alt="" class="icon">info@da-film.com

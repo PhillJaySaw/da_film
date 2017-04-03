@@ -2,7 +2,7 @@
 <html id="kontakt" lang="en">
    <head>
       <meta charset="utf-8">
-      <title>D.A. Film - Bags and PE hoods - ask abut product</title>
+      <title>D.A. Film - Bags and PE hoods - ask about the product</title>
       <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Quattrocento+Sans&amp;subset=latin-ext" rel="stylesheet">
       <link rel="stylesheet" href="styles/normalize.css">
       <link rel="stylesheet" href="styles/skeleton.css">
@@ -18,16 +18,17 @@
             <li><a href="onas.html">About Us</a></li>
             <li><a href="kontakt.html">Contact</a></li>
             <li><a href="warsprzed.html">Conditions of Sale</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
          </ul>
       </nav>
       <header>
          <div class="header-box">
-            <h1>Bags and PE hoods - ask about product</h1>
+            <h1>Bags and PE hoods - ask about the product</h1>
             <div class="text-box">
                <p>
                   If you have any questions about a particular product,
-                  Or you want to send us the dimensions of the product you are interested in,
-                  then please use our form.
+                  or you want to send us the dimensions of the product you
+                  are interested in, then please use this form.
                </p>
             </div>
          </div>
@@ -54,9 +55,9 @@
                       <option value="">---</option>
                       <option value="worki śmieciowe">Garbage bags</option>
                       <option value="worki azbest UE niebieskie">asbestos EU standard – blue imprinted bags</option>
-                      <option value="worki azbest UE bezbarwne druk">asbestos EU Standard - colorless printed bags</option>
-                      <option value="worki azbest UE bezbarwne">asbestos EU Standard – colorless bags</option>
-                      <option value="worki azbest UK">asbestos UK standard – colorless and red, imprinted</option>
+                      <option value="worki azbest UE bezbarwne druk">asbestos EU Standard - colourless printed bags</option>
+                      <option value="worki azbest UE bezbarwne">asbestos EU Standard – colourless bags</option>
+                      <option value="worki azbest UK">asbestos UK standard – colourless and red, imprinted</option>
                       <option value="kaptur termokurczliwy">Shrink Cover</option>
                    </select>
 
@@ -73,7 +74,7 @@
                      <label for="grubosc">thickness</label>
                      <input type="text" name="grubosc" value="" placeholder="microns">
 
-                     <label for="kolor">color</label>
+                     <label for="kolor">colour</label>
                      <input type="text" name="kolor" value="">
 
                      <label for="ilosc">product amount</label>

@@ -17,6 +17,7 @@
             <li><a href="onas.html">O Nas</a></li>
             <li><a href="#">Kontakt</a></li>
             <li><a href="warsprzed.html">Warunki sprzedaży</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
          </ul>
       </nav>
       <header>
@@ -33,10 +34,10 @@
       <main class="container">
          <section class="row kontakt-info">
             <div class="four columns kontakt">
-               <img src="media/phone-call.png" alt="" class="icon">+48 56 621 06 33
+               <img src="media/phone-call.png" alt="" class="icon">+48 56 621 06 33<br><div class="phone-number">+48 56 612 60 37</div>
             </div>
             <div class="four columns kontakt">
-               <img src="media/smartphone.png" alt="" class="icon">+48 571 402 772
+               <img src="media/smartphone.png" alt="" class="icon">+48 571 402 770
             </div>
             <div class="four columns kontakt">
                <img src="media/email.png" alt="" class="icon">info@da-film.com
