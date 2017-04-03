@@ -38,7 +38,7 @@
                   <h2>Instrukcja</h2>
                   <ul>
                      <li>Wybierz interesujący Cie rodzaj folii, dla której chcesz obliczyć wagę</li>
-                     <li>Następnie podaj jej wymiary, np.: szerokość - 4.5, długość - 50, grubość - 110</li>
+                     <li>Podaj wymiary, np.: szerokość w <strong>metrach</strong> - 4.5, zakładki w <strong>metrach</strong> - 0.85, długość w <strong>metrach</strong> - 50, grubość w <strong>mikronach</strong> - 110</li>
                      <li>Nastepnie wciśnij 'oblicz'</li>
                   </ul>
                   <span class="error">Uwaga!</span> prosimy zwrócić uwagę na to aby używać <strong>kropek</strong> zamiast <strong>przecinków</strong>.
@@ -57,17 +57,16 @@
                <input type="text" id="szerokosc" value="" placeholder="metry" required>
             </span>
             <span>
+               <label for="zakladki">Zakładki (łączna długość)</label>
+               <input type="text" id="zakladki" value="" placeholder="metry" disabled>
+            </span>
+            <span>
                <label for="dlugosc">Długość</label>
                <input type="text" id="dlugosc" value="" placeholder="metry" required>
             </span>
             <span>
                <label for="grubosc">Grubość</label>
                <input type="text" id="grubosc" value="" placeholder="mikrony" required>
-            </span>
-
-            <span>
-               <label for="zakladki">Zakładki</label>
-               <input type="text" id="zakladki" value="" placeholder="metry" disabled>
             </span>
 
             <button type="button" id="calcButton" name="button">Oblicz</button>

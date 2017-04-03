@@ -28,7 +28,7 @@ document.getElementById('calcButton').addEventListener("click", function(event) 
    szerokosc = parseFloat(document.getElementById('szerokosc').value, 10);
    dlugosc = parseFloat(document.getElementById('dlugosc').value, 10);
    grubosc = parseFloat(document.getElementById('grubosc').value, 10);
-   zakladki = document.getElementById('zakladki').value;
+   zakladki = parseFloat(document.getElementById('zakladki').value, 10);
    var type = document.getElementById('selectType').value;
    var wynik;
    var wynikBox = document.getElementById('wynik');
@@ -48,7 +48,7 @@ document.getElementById('calcButton').addEventListener("click", function(event) 
       break;
 
       case "calcWorKapZakladki":
-         wynik = calcRekaw(szerokosc, dlugosc, grubosc, zakladki);
+         wynik = calcWorKapZakladki(szerokosc, dlugosc, grubosc, zakladki);
       break;
    }
 

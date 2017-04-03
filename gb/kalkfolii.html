@@ -37,7 +37,7 @@
                   <h2>Instructions</h2>
                   <ul>
                      <li>Choose a film type</li>
-                     <li>Type in the dimensions, for example: width - 4.5, length - 50, thickness - 110</li>
+                     <li>Type in the dimensions, for ex.: width in <strong>meters</strong> - 4.5, folds in <strong>meters</strong> - 0.85, length in <strong>meters</strong> - 50, thickness in <strong>microns</strong> - 110</li>
                      <li>Press 'calculate'</li>
                   </ul>
                   <span class="error">Keep in mind!</span> Please keep in mind, that in order for the calculator to work properly, you need to use <strong>dots</strong> instead of <strong>commas</strong>
@@ -56,17 +56,16 @@
                <input type="text" id="szerokosc" value="" placeholder="meters" required>
             </span>
             <span>
+               <label for="zakladki">Folds (total length)</label>
+               <input type="text" id="zakladki" value="" placeholder="metry" disabled>
+            </span>
+            <span>
                <label for="dlugosc">Length</label>
                <input type="text" id="dlugosc" value="" placeholder="meters" required>
             </span>
             <span>
                <label for="grubosc">Thickness</label>
                <input type="text" id="grubosc" value="" placeholder="microns" required>
-            </span>
-
-            <span>
-               <label for="zakladki">Folds</label>
-               <input type="text" id="zakladki" value="" placeholder="metry" disabled>
             </span>
 
             <button type="button" id="calcButton" name="button">calculate</button>

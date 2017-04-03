@@ -104,6 +104,10 @@ main h1 {
    color: #0D1B2A;
 }
 
+.no-margin {
+   margin-bottom: .5em;
+}
+
 .header-decoration-sqaure {
    width: 10px;
    height: 45px;

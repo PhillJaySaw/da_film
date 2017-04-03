@@ -87,7 +87,7 @@
                         <option value="worki zbiorcze">Bigbags</option>
                         <option value="euro-box">euro-box</option>
                      </select>
-                     <input type="text" name="ilosc-box" value="" placeholder="Menge">
+                     <!--<input type="text" name="ilosc-box" value="" placeholder="Menge">-->
 
                      <h3>Zulagen</h3>
                      <input type="checkbox" name="check_list[]" value="uv"> UV <br>
@@ -124,7 +124,7 @@
                    $kolor=$_REQUEST['kolor'];
                    $ilosc=$_REQUEST['ilosc'];
                    $pakowanie=$_REQUEST['sposob-pakowania'];
-                   $iloscBox=$_REQUEST['ilosc-box'];
+                   /*$iloscBox=$_REQUEST['ilosc-box'];*/
                    $dodatki = "";
                    $adresDostawy=$_REQUEST['ulica-numer-lokalu']."\r\n".$_REQUEST['kod-pocztowy']."\r\n".
                                  $_REQUEST['miasto']."\r\n".$_REQUEST['kraj'];
@@ -144,7 +144,7 @@
                             "Grubość: ".$grubosc." mikrony\r\n".
                             "Kolor: ".$kolor."\r\n".
                             "Ilość: ".$ilosc." sztuk\r\n\r\n".
-                            "Sposób pakowanie: ".$pakowanie."\r\n"."ilość: ".$iloscBox."\r\n".
+                            "Sposób pakowanie: ".$pakowanie."\r\n"./*"ilość: ".$iloscBox."\r\n".*/
                             "Dodatki: ".$dodatki."\r\n\r\n".
                             "Adred dostawy:\r\n".$adresDostawy."\r\n\r\n".
                             "UWAGI/PYTANIE:\r\n".$_REQUEST['message'];

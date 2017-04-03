@@ -77,18 +77,26 @@
                      <label for="kolor">colour</label>
                      <input type="text" name="kolor" value="">
 
+                     <!--
                      <label for="ilosc">product amount</label>
                      <input type="text" name="ilosc" value="" placeholder="quantity">
+                     -->
+
+                     <label for="ilosc">product amount</label>
+                     <select class="product-select" name="ilosc">
+                        <option value="">---</option>
+                        <option value="metry kwadratowe">square meters</option>
+                        <option value="w rolce">on the roll</option>
+                     </select>
+                     <input type="text" name="ilosc-liczba" value="" placeholder="amount">
 
                      <h3>Packeging type</h3>
                      <select class="product-select" name="sposob-pakowania">
                         <option value="brak">---</option>
-                        <option value="kartony">box</option>
-                        <option value="arkusze perferowane na rolce">Sheets perfered on roll</option>
-                        <option value="worki zbiorcze">Bulk bags</option>
-                        <option value="euro-box">euro-box</option>
+                        <option value="euro-pallete">euro-pallete</option>
+                        <option value="industrial-pallete">industrial-pallete</option>
                      </select>
-                     <input type="text" name="ilosc-box" value="" placeholder="quantity">
+                     <input type="text" name="ilosc-box" value="" placeholder="quantity on the pallete">
 
                      <h3>Extras</h3>
                      <input type="checkbox" name="check_list[]" value="uv"> UV <br>
@@ -124,6 +132,7 @@
                    $grubosc=$_REQUEST['grubosc'];
                    $kolor=$_REQUEST['kolor'];
                    $ilosc=$_REQUEST['ilosc'];
+                   $iloscLiczba=$_REQUEST['ilosc-liczba'];
                    $pakowanie=$_REQUEST['sposob-pakowania'];
                    $iloscBox=$_REQUEST['ilosc-box'];
                    $dodatki = "";
@@ -143,7 +152,7 @@
                             "Długość: ".$dlugosc."metry\r\n".
                             "Grubość: ".$grubosc."mikrony\r\n".
                             "Kolor: ".$kolor."\r\n".
-                            "Ilość: ".$ilosc." sztuk\r\n\r\n".
+                            "Ilość produktu: ".$ilosc." - ".$iloscLiczba." \r\n\r\n".
                             "Sposób pakowanie: ".$pakowanie."\r\n"."ilość: ".$iloscBox."\r\n".
                             "Dodatki: ".$dodatki."\r\n\r\n".
                             "Adred dostawy:\r\n".$adresDostawy."\r\n\r\n".

@@ -52,7 +52,7 @@
 
                    <h3>Wybierz produkt którym jesteś zainteresowany</h3>
                    <select class="product-select" name="nazwa-produktu">
-                      <option value="">wybierz rodzaj worków</option>
+                      <option value="">---</option>
                       <option value="arkusze płachty luzem">Płachty - arkusze pakowane luzem w worki lub kartony</option>
                       <option value="arkusze i płachty perferowane na rolce">Arkusze i płachty - perferowane na rolce</option>
                       <option value="male rolki">Małe rolki</option>
@@ -77,6 +77,9 @@
                      <label for="dlugosc">długość</label>
                      <input type="text" name="dlugosc" value="" placeholder="metry">
 
+                     <label for="iloscRolka">ilość na rolce</label>
+                     <input type="text" name="iloscNaRolce" value="" placeholder="sztuki"> * tyczy się tylko <b>perferowanych na rolce</b>
+
                      <label for="grubosc">grubość</label>
                      <input type="text" name="grubosc" value="" placeholder="mikrony">
 
@@ -90,7 +93,7 @@
                      <select class="product-select" name="sposob-pakowania">
                         <option value="brak">---</option>
                         <option value="kartony">kartony</option>
-                        <option value="arkusze perferowane na rolce">arkusze perferowane na rolce</option>
+                        <!--<option value="arkusze perferowane na rolce">arkusze perferowane na rolce</option>-->
                         <option value="worki zbiorcze">worki zbiorcze</option>
                         <option value="euro-box">euro-box</option>
                      </select>
@@ -127,6 +130,7 @@
                    $szerokosc=$_REQUEST['szerokosc'];
                    $zakladka=$_REQUEST['zakldaka'];
                    $dlugosc=$_REQUEST['dlugosc'];
+                   $iloscNaRolce=$_REQUEST['iloscNaRolce'];
                    $grubosc=$_REQUEST['grubosc'];
                    $kolor=$_REQUEST['kolor'];
                    $ilosc=$_REQUEST['ilosc'];
@@ -148,6 +152,7 @@
                             "Szerokość: ".$szerokosc."metry\r\n".
                             "Zakładka: ".$zakladka."metry\r\n".
                             "Długość: ".$dlugosc."metry\r\n".
+                            "Ilosc na rolce: ".$iloscNaRolce."\r\n".
                             "Grubość: ".$grubosc."mikrony\r\n".
                             "Kolor: ".$kolor."\r\n".
                             "Ilość: ".$ilosc." sztuk\r\n\r\n".

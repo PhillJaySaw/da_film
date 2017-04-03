@@ -38,7 +38,7 @@
                   <h2>Anleitung</h2>
                   <ul>
                      <li>Wähle einen Filmtyp</li>
-                     <li>Geben Sie die Abmessungen ein, zB: Breite - 4.5, Länge - 50, Dicke - 110</li>
+                     <li>Geben Sie die Abmessungen ein, zB: Breite in <strong>Metern</strong> - 4.5, Falten in <strong>Metern</strong> - 0.85, Länge in <strong>Metern</strong> - 50, Dicke in <strong>Mikron</strong>- 110</li>
                      <li>Drücke 'rachnen'</li>
                   </ul>
                   <span class="error">Achtung!</span> Bitte beachten Sie dass Sie <strong>punkte</strong> benutzen und nicht <strong>kommas</strong>.
@@ -47,7 +47,7 @@
             <form id="calcForm">
             <select id="selectType">
                <option value="no-type">wähle einen filmtype</option>
-               <option value="calcPolRekawTasma">Folienhalbschlauch, PE-band</option>
+               <option value="calcPolRekawTasma">Folienhalbschlauch, PE-flachband</option>
                <option value="calcRekaw">Folienschlauch</option>
                <option value="calcWorkiPlasko">Flachbeutel (ohne Falten)</option>
                <option value="calcWorKapZakladki">Beutel und Hauben mit Falten</option>
@@ -55,6 +55,10 @@
             <span>
                <label for="szerokosc">Breite</label>
                <input type="text" id="szerokosc" value="" placeholder="meter" required>
+            </span>
+            <span>
+               <label for="zakladki">Falten (insgesamt)</label>
+               <input type="text" id="zakladki" value="" placeholder="meter" disabled>
             </span>
             <span>
                <label for="dlugosc">Länge</label>
@@ -65,10 +69,7 @@
                <input type="text" id="grubosc" value="" placeholder="mikrons" required>
             </span>
 
-            <span>
-               <label for="zakladki">Falten</label>
-               <input type="text" id="zakladki" value="" placeholder="meter" disabled>
-            </span>
+
 
             <button type="button" id="calcButton" name="button">rachnen</button>
 
